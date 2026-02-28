@@ -33,7 +33,9 @@ No installation required.
 2. Open `index.html` in your browser (Chrome/Edge/Firefox)
 
 ## Live Demo
-`https://lolett.github.io/daw-dwec-suenos-valenti-client/`
+```bash
+https://lolett.github.io/daw-dwec-suenos-valenti-client/
+```
 
 ## Troubleshooting
 If your browser blocks module loading via `file://`, run a simple local server:
@@ -42,5 +44,10 @@ If your browser blocks module loading via `file://`, run a simple local server:
 - Install "Live Server" extension and click "Go Live"
 
 ### Option B --> (Python)
-`python -m http.server <port_number>`
-then open `http://localhost:<port_number>` on your browser
+```bash
+python -m http.server <port_number>
+```
+then open on your browser
+```bash
+http://localhost:<port_number>
+```
