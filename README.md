@@ -14,11 +14,20 @@ The project loads data from JSON, renders UI dynamically, and keeps user state i
 - HTML / CSS
 - JavaScript (ES Modules)
 
+## Assessment checklist:
+- Fetch data from JSON
+- DOM rendering
+- Event handling
+- LocalStorage persistence
+
 ## How to Run
 No installation required.
 
 1. Download / clone the repository
 2. Open `index.html` in your browser (Chrome/Edge/Firefox)
+
+## Live Demo
+`https://lolett.github.io/daw-dwec-suenos-valenti-client/`
 
 ## Troubleshooting
 If your browser blocks module loading via `file://`, run a simple local server:
