@@ -1,0 +1,186 @@
+/* Variables creadas para los colores */
+:root{
+  --bg: #0b0f19;
+  --bg-2: #0f172a;
+  --panel: rgba(255,255,255,0.06);
+  --panel-2: rgba(255,255,255,0.09);
+  --border: rgba(255,255,255,0.10);
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+  --accent: #7c3aed;
+  --accent-2: #22c55e;
+  --danger: #ef4444;
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+*{ box-sizing: border-box; }
+
+/* Estilos generales */
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.45;
+  background:
+    radial-gradient(900px 500px at 15% 10%, rgba(124,58,237,0.25), transparent 60%),
+    radial-gradient(700px 450px at 90% 20%, rgba(34,197,94,0.16), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  min-height: 100vh;
+}
+
+/* Header de tipo panel */
+header{
+  max-width: 980px;
+  margin: 24px auto 0;
+  padding: 18px 18px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+/* Título principal */
+header h1{
+  margin: 0 0 6px;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+header p{
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+/* Barra de botones de navegación */
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Botones */
+button{
+  appearance: none;
+  border: 1px solid rgba(34,197,94,0.45);
+  background: rgba(34,197,94,0.14);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.06s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+/* Efecto hover en botones */
+button:hover{
+  background: rgba(34,197,94,0.22);
+  border-color: rgba(3, 234, 87, 0.6);
+}
+
+/* Efecto “click” en botones */
+button:active{
+  transform: translateY(1px);
+}
+
+/* Accesibilidad: foco visible con teclado */
+button:focus-visible{
+  outline: 2px solid rgba(124,58,237,0.65);
+  outline-offset: 2px;
+}
+
+/* Número de elementos del carrito */
+#badge{
+  display: inline-block;
+  min-width: 26px;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: rgba(124,58,237,0.25);
+  border: 1px solid rgba(124,58,237,0.35);
+}
+
+hr{
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 14px 0 0;
+}
+
+/* Contenedor principal donde se renderizan las sesiones */
+#app{
+  max-width: 980px;
+  margin: 16px auto 36px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+#app h2{
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* Estilos para inputs */
+input{
+  width: min(520px, 100%);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.25);
+  color: var(--text);
+}
+
+input::placeholder{ color: rgba(229,231,235,0.55); }
+
+input:focus{
+  outline: none;
+  border-color: rgba(124,58,237,0.55);
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.18);
+}
+
+/* Tarjetas de sesiones */
+#app > div > div{
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  line-height: 1.5;
+}
+
+/* Lista del carrito */
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 14px;
+}
+
+
+/* Elementos del carrito */
+li{
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Botón “Eliminar” dentro del li */
+li button{
+  background: rgba(239,68,68,0.10);
+  border-color: rgba(239,68,68,0.25);
+}
+
+li button:hover{
+  background: rgba(239,68,68,0.18);
+  border-color: rgba(239,68,68,0.35);
+}
+
+/* Mensajes */
+p{
+  color: var(--muted);
+}
+strong{ color: var(--text); }

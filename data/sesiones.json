@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Viaje al Ser Interno", "precio": 105 },
+  { "id": 2, "nombre": "Meditación del Despertar", "precio": 200 },
+  { "id": 3, "nombre": "Conexión SupraConsciente", "precio": 205 },
+  { "id": 4, "nombre": "Descanso Mental Express", "precio": 75 }
+]
